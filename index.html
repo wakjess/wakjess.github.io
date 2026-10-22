@@ -506,19 +506,22 @@
                         </li>
                     </ul>
                 </div>
-                <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Handshake réseau réussi. Message transmis au système.');">
+                <form class="contact-form reveal" action="https://formspree.io/f/mljgqygp" method="POST">
                     <div class="form-group">
                         <label class="form-label">Votre Nom / Entreprise</label>
-                        <input type="text" class="form-input" placeholder="Ex: Société Générale / MUPECI Security Team" required>
+                        <input type="text" name="name" class="form-input" placeholder="Ex: Société Générale / MUPECI Security Team" required>
                     </div>
+                    
                     <div class="form-group">
                         <label class="form-label">Adresse de réponse</label>
-                        <input type="email" class="form-input" placeholder="adresse@mail.com" required>
+                        <input type="email" name="email" class="form-input" placeholder="adresse@mail.com" required>
                     </div>
+                    
                     <div class="form-group">
                         <label class="form-label">Détails du message ou de l'offre</label>
-                        <textarea class="form-input" style="min-height:110px; resize:vertical;" placeholder="Bonjour Jessy, votre profil nous intéresse pour..." required></textarea>
+                        <textarea name="message" class="form-input" style="min-height:110px; resize:vertical;" placeholder="Bonjour Jessy, votre profil nous intéresse..." required></textarea>
                     </div>
+                    
                     <button type="submit" class="btn btn-primary" style="width:100%;">Initier la connexion</button>
                 </form>
             </div>
